@@ -11,7 +11,7 @@
 <!-- google font poppins -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- tailwind custom classes -->
 <script>
   tailwind.config = {
@@ -19,8 +19,7 @@
       extend: {
         colors: {
           clifford: '#da373d',
-          'bike-primary': '#E76F51',
-          'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+          'btn-or': '#0d0d1205',
         }
       }
     }
@@ -31,19 +30,77 @@
 
 <style>
     .font-poppins{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Manrope', sans-serif;
     }
 </style>
 </head>
 <body>
     <header>
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
 
     </header>
     <main>
+        <section class="border-dotted">
+           <h3 class="sm:text-2xl lg:text-5xl sm:mt-10 lg:mt-20 font-extrabold text-center">Professional Hockeys Club</h3>
+           <p class="text-center mt-2 sm:text-xs">Our Hockey's club is best service provider <br> in this country.</p>
+        </section>
+        <section class=" mt-16 grid grid-cols-1 lg:grid-cols-4 gap-10  ">
+            <div class="  text-center">
+                <div class="radial-progress text-rose-500" style="--value:87;" role="progressbar">87%</div>
+                <h4 class="font-semibold mt-5 text-center">Prayer Facility</h4>
+                <p class="text-center">We have nice furnished <br> prayer room.</p>
+            </div>
+            <div class=" text-center">
+                <div class="radial-progress text-green-400" style="--value:95;" role="progressbar">95%</div>
+                <h4 class="font-semibold mt-5 text-center">Prayer Facility</h4>
+                <p class="text-center">We have nice furnished <br> prayer room.</p>
+            </div>
+            <div class=" text-center">
+                <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+                <h4 class="font-semibold mt-5 text-center">Prayer Facility</h4>
+                <p class="text-center">We have nice furnished <br> prayer room.</p>
+            </div>
+            <div class=" text-center">
+                <div class="radial-progress text-cyan-400" style="--value:80;" role="progressbar">80%</div>
+                <h4 class="font-semibold mt-5 text-center">Prayer Facility</h4>
+                <p class="text-center">We have nice furnished <br> prayer room.</p>
+            </div>
+        </section>
 
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
